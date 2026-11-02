@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Lisa S. Brenner, PhD</title>
+  <meta name="description" content="Contact Lisa S. Brenner, PhD, Professor of Theatre Arts, Drew University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="index.html"><img class="site-logo" src="images/masks.svg" alt="" width="42" height="30">Lisa S. Brenner, PhD</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biography.html">Biography</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Contact</h1>
+
+    <p class="contact-intro">To get in touch, please send a message using the form below.</p>
+
+    <!-- Messages are delivered by Web3Forms (web3forms.com).
+         The access key below is safe to be public; it only lets the form send messages to Lisa. -->
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="92490151-0a67-42ba-b9e6-3a1a38c0a873">
+      <input type="hidden" name="subject" value="New message from the Lisa S. Brenner website">
+      <input type="hidden" name="from_name" value="Lisa S. Brenner website">
+
+      <!-- Hidden trap for spam robots. Leave this alone. -->
+      <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="7" required></textarea>
+      </div>
+
+      <!-- "I'm not a robot" check (hCaptcha, provided by Web3Forms) -->
+      <div class="h-captcha" data-captcha="true"></div>
+
+      <button type="submit" class="featured-button form-submit">Send message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Lisa S. Brenner</p>
+  </footer>
+
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
